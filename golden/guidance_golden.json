@@ -1,0 +1,1892 @@
+{
+ "_about": "Guidance extraction golden set (40 ASX announcements). Keys hand-written from the PDF text; evidence quotes verified against the cached PDF pages. Values in the stated unit (millions unless metric_detail says cents). {any_of:[...]} = any listed value is correct. alternates = other metrics in the same release that are an equally valid primary metric, each with its own direction.",
+ "rows": [
+  {
+   "id": 1,
+   "symbol": "MFD",
+   "doc_key": "2924-03148565-3A704122",
+   "event_date": "2026-10-15",
+   "difficulty": "hard",
+   "traps": [
+    "pcp actual $2.3m quoted next to the new range",
+    "prior guidance was withdrawn before being replaced",
+    "ex-cost range 2.8-3.1 also printed"
+   ],
+   "key": {
+    "metric": "EBITDA",
+    "period": "FY26",
+    "previous_low": 4.7,
+    "previous_high": 5.3,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 2.4,
+    "new_high": 2.7,
+    "direction": "DOWNGRADE"
+   },
+   "alternates": [],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "Mayfield now expects FY26 Underlying Group EBITDA1 of $2.4 million to $2.7 million, compared with"
+    },
+    {
+     "page": 1,
+     "quote": "The revised guidance is below the original FY26 Underlying Group EBITDA guidance of $4.7 million to"
+    }
+   ],
+   "note": "Production row GUID-1: model once labelled this UPGRADE."
+  },
+  {
+   "id": 2,
+   "symbol": "MFD",
+   "doc_key": "2924-03148728-3A704168",
+   "event_date": "2026-10-15",
+   "difficulty": "hard",
+   "traps": [
+    "correction notice wrapping the full re-release",
+    "pcp actual $2.3m"
+   ],
+   "key": {
+    "metric": "EBITDA",
+    "period": "FY26",
+    "previous_low": 4.7,
+    "previous_high": 5.3,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 2.4,
+    "new_high": 2.7,
+    "direction": "DOWNGRADE"
+   },
+   "alternates": [],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "advises a correction to the Revised FY26"
+    },
+    {
+     "page": 2,
+     "quote": "Mayfield now expects FY26 Underlying Group EBITDA1 of $2.4 million to $2.7 million"
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "symbol": "CLX",
+   "doc_key": "2924-03104069-6A1331049",
+   "event_date": "2026-06-25",
+   "difficulty": "hard",
+   "traps": [
+    "only a % change vs last year's result; no prior guidance",
+    "new figure must be derived (1.75 x 19.7)"
+   ],
+   "key": {
+    "metric": "PBT",
+    "period": "FY26",
+    "previous_low": null,
+    "previous_high": null,
+    "previous_source": {
+     "any_of": [
+      "PCP_ACTUAL",
+      "NONE"
+     ]
+    },
+    "new_low": {
+     "any_of": [
+      34.475,
+      34.5,
+      null
+     ]
+    },
+    "new_high": {
+     "any_of": [
+      34.475,
+      34.5,
+      null
+     ]
+    },
+    "direction": "INITIATED",
+    "pcp_actual": 19.7
+   },
+   "alternates": [],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "approximately 75% higher than the profit before tax for the previous corresponding period of $19.7 million"
+    }
+   ],
+   "note": "No prior guidance exists; $19.7m is FY25 actual. Doc symbol is CTI Logistics (ASX: CLX)."
+  },
+  {
+   "id": 4,
+   "symbol": "AIH",
+   "doc_key": "2924-03116288-3A697949",
+   "event_date": "2026-07-31",
+   "difficulty": "hard",
+   "traps": [
+    "GBP with AUD in brackets",
+    "two metrics",
+    "prior figure is prospectus FY26 guidance, not FY25 actual"
+   ],
+   "key": {
+    "metric": "Revenue",
+    "period": "FY26",
+    "previous_low": 388,
+    "previous_high": 388,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 334,
+    "new_high": 334,
+    "direction": "DOWNGRADE"
+   },
+   "alternates": [
+    {
+     "metric": "EBITDA",
+     "period": "FY26",
+     "previous_low": 62.3,
+     "previous_high": 62.3,
+     "previous_source": "PRIOR_GUIDANCE",
+     "new_low": 41,
+     "new_high": 41,
+     "direction": "DOWNGRADE"
+    },
+    {
+     "metric": "Revenue",
+     "period": "FY26",
+     "previous_low": 188,
+     "previous_high": 188,
+     "previous_source": "PRIOR_GUIDANCE",
+     "new_low": 162,
+     "new_high": 162,
+     "direction": "DOWNGRADE",
+     "metric_detail": "GBP"
+    },
+    {
+     "metric": "EBITDA",
+     "period": "FY26",
+     "previous_low": 30.2,
+     "previous_high": 30.2,
+     "previous_source": "PRIOR_GUIDANCE",
+     "new_low": 20,
+     "new_high": 20,
+     "direction": "DOWNGRADE",
+     "metric_detail": "GBP"
+    }
+   ],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "impacted the Company’s ability to meet its FY26 guidance1 and is now forecasting"
+    },
+    {
+     "page": 1,
+     "quote": "Revenue of approximately £162m (A$334m1), 14% down from £188m (A$388m1)"
+    },
+    {
+     "page": 1,
+     "quote": "the exchange used in the Prospectus to present FY26 financial guidance"
+    }
+   ],
+   "note": "Values in AUD per the production prompt; GBP (188->162, 30.2->20) also accepted by the scorer's currency check."
+  },
+  {
+   "id": 5,
+   "symbol": "AMS",
+   "doc_key": "2924-03108175-3A696687",
+   "event_date": "2026-07-06",
+   "difficulty": "hard",
+   "traps": [
+    "prior guidance was H2; new figure given for FY (~$40m) and H2 (~$16m)",
+    "EBITDA range with no prior"
+   ],
+   "key": {
+    "metric": "Revenue",
+    "period": "H2FY26",
+    "previous_low": 23.7,
+    "previous_high": 23.7,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 16,
+    "new_high": 16,
+    "direction": "DOWNGRADE"
+   },
+   "alternates": [],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "we anticipate FY26 sales to be in the region of ~$40m,"
+    },
+    {
+     "page": 1,
+     "quote": "compares to previous"
+    },
+    {
+     "page": 1,
+     "quote": "guidance of ~$23.7m for H2’FY26."
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "symbol": "HCL",
+   "doc_key": "2924-03102408-3A695719",
+   "event_date": "2026-06-22",
+   "difficulty": "hard",
+   "traps": [
+    "prior was 'breakeven or profitability' (a floor at 0)",
+    "new figure is a loss range",
+    "H1 loss $5.4m is prior half, not guidance",
+    "revenue guided only as % of H1"
+   ],
+   "key": {
+    "metric": "EBITDA",
+    "period": "H2FY26",
+    "previous_low": 0,
+    "previous_high": null,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": -1.6,
+    "new_high": -1.2,
+    "direction": "DOWNGRADE",
+    "prior_is_floor": true
+   },
+   "alternates": [],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "H2 FY26 was expected to return to breakeven or"
+    },
+    {
+     "page": 1,
+     "quote": "an EBITDA loss for H2 FY26 of between $1.2 million and $1.6 million1"
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "symbol": "CCP",
+   "doc_key": "2924-03087515-2A1670755",
+   "event_date": "2026-05-07",
+   "difficulty": "hard",
+   "traps": [
+    "slide deck, guidance in a table",
+    "investment and lending lines upgraded while NPAT unchanged"
+   ],
+   "key": {
+    "metric": "NPAT",
+    "period": "FY26",
+    "previous_low": 100,
+    "previous_high": 110,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 100,
+    "new_high": 110,
+    "direction": "REAFFIRMED"
+   },
+   "alternates": [
+    {
+     "metric": "Other",
+     "period": "FY26",
+     "previous_low": 350,
+     "previous_high": 390,
+     "previous_source": "PRIOR_GUIDANCE",
+     "new_low": 420,
+     "new_high": 430,
+     "direction": "UPGRADE",
+     "metric_detail": "Gross lending"
+    }
+   ],
+   "evidence": [
+    {
+     "page": 11,
+     "quote": "Investment upgraded and NPAT intact"
+    },
+    {
+     "page": 11,
+     "quote": "Issued May-26"
+    },
+    {
+     "page": 11,
+     "quote": "Issued Aug-25"
+    }
+   ],
+   "note": "Page 11 table: NPAT $100-110m in both the Aug-25 and May-26 columns."
+  },
+  {
+   "id": 8,
+   "symbol": "SLC",
+   "doc_key": "2924-03096552-2A1675199",
+   "event_date": "2026-06-03",
+   "difficulty": "medium",
+   "traps": [
+    "57-page investor day deck",
+    "FY29 ambitions that are explicitly not guidance",
+    "FY25 actual $92.2m in the same table"
+   ],
+   "key": {
+    "metric": "EBITDA",
+    "period": "FY26",
+    "previous_low": 112,
+    "previous_high": 120,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 118,
+    "new_high": 122,
+    "direction": "UPGRADE"
+   },
+   "alternates": [],
+   "evidence": [
+    {
+     "page": 14,
+     "quote": "Underlying EBITDA1 of $118m-$122m (28%-32%"
+    },
+    {
+     "page": 14,
+     "quote": "Previous guidance of"
+    },
+    {
+     "page": 14,
+     "quote": "$112m-$120m provided in February 2026."
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "symbol": "PPC",
+   "doc_key": "2924-03094606-6A1327310",
+   "event_date": "2026-05-28",
+   "difficulty": "easy",
+   "traps": [],
+   "key": {
+    "metric": "NPAT",
+    "period": "FY26",
+    "previous_low": 86,
+    "previous_high": 90,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 98,
+    "new_high": 100,
+    "direction": "UPGRADE"
+   },
+   "alternates": [],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "Peet now expects FY26 Net Profit After Tax to be in the range of $98 million to $100 million,"
+    },
+    {
+     "page": 1,
+     "quote": "representing an upgrade to previous guidance of $86 million to $90 million"
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "symbol": "BXN",
+   "doc_key": "2924-03061805-2A1656252",
+   "event_date": "2026-02-26",
+   "difficulty": "easy",
+   "traps": [
+    "revenue guidance unchanged alongside EBITDA upgrade"
+   ],
+   "key": {
+    "metric": "EBITDA",
+    "period": "FY26",
+    "previous_low": 11.5,
+    "previous_high": 13.5,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 16.5,
+    "new_high": 19.0,
+    "direction": "UPGRADE"
+   },
+   "alternates": [
+    {
+     "metric": "Revenue",
+     "period": "FY26",
+     "previous_low": 65,
+     "previous_high": 75,
+     "previous_source": "PRIOR_GUIDANCE",
+     "new_low": 65,
+     "new_high": 75,
+     "direction": "REAFFIRMED"
+    }
+   ],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "Upgraded FY26 adjusted EBITDA guidance to $16.5 million – $19.0 million (previously"
+    },
+    {
+     "page": 1,
+     "quote": "$11.5 million – $13.5 million)"
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "symbol": "PNC",
+   "doc_key": "2924-03064781-6A1314916",
+   "event_date": "2026-03-05",
+   "difficulty": "hard",
+   "traps": [
+    "'at least' floor",
+    "prior guidance referenced only as '28% increase on original'; no prior number printed"
+   ],
+   "key": {
+    "metric": "NPAT",
+    "period": "FY26",
+    "previous_low": {
+     "any_of": [
+      null,
+      17.97,
+      18.0
+     ]
+    },
+    "previous_high": {
+     "any_of": [
+      null,
+      17.97,
+      18.0
+     ]
+    },
+    "previous_source": {
+     "any_of": [
+      "PRIOR_GUIDANCE",
+      "NONE"
+     ]
+    },
+    "new_low": 23,
+    "new_high": {
+     "any_of": [
+      23,
+      null
+     ]
+    },
+    "direction": "UPGRADE"
+   },
+   "alternates": [],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "FY26 NPAT Guidance to at least $23m"
+    },
+    {
+     "page": 1,
+     "quote": "The revised guidance represents a 28% increase on the Company’s original FY26 NPAT Guidance."
+    }
+   ],
+   "note": "Prior figure not printed (~$18.0m implied). previous_low null and 17.97 both accepted; the code cannot compute a direction without a printed prior."
+  },
+  {
+   "id": 12,
+   "symbol": "RPL",
+   "doc_key": "2924-02970903-2A1609933",
+   "event_date": "2025-07-25",
+   "difficulty": "hard",
+   "traps": [
+    "floor -> higher floor ('at least $35m' -> 'at least $40m')",
+    "half-year (1H25, Dec year-end)",
+    "separate NPAT floor with no prior",
+    "FUM table dominates page 1"
+   ],
+   "key": {
+    "metric": "Revenue",
+    "period": "H1CY2025",
+    "previous_low": 35,
+    "previous_high": null,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 40,
+    "new_high": {
+     "any_of": [
+      40,
+      null
+     ]
+    },
+    "direction": "UPGRADE",
+    "prior_is_floor": true,
+    "metric_detail": "Performance fee revenue"
+   },
+   "alternates": [
+    {
+     "metric": "NPAT",
+     "period": "H1CY2025",
+     "previous_low": null,
+     "previous_high": null,
+     "previous_source": {
+      "any_of": [
+       "NONE",
+       "PCP_ACTUAL"
+      ]
+     },
+     "new_low": 40,
+     "new_high": {
+      "any_of": [
+       40,
+       null
+      ]
+     },
+     "direction": "INITIATED"
+    }
+   ],
+   "evidence": [
+    {
+     "page": 2,
+     "quote": "to at least $40 million (pre-tax and on a normalised basis)4 from its previous estimate of “at least $35 million” announced"
+    },
+    {
+     "page": 2,
+     "quote": "1H25 Normalised NPAT will be at least $40 million5"
+    }
+   ],
+   "note": "Code arithmetic treats a floor prior as REAFFIRMED unless the new max falls below it, so floor->higher floor computes REAFFIRMED. Truth is UPGRADE (company says 'upgraded')."
+  },
+  {
+   "id": 13,
+   "symbol": "JIN",
+   "doc_key": "2924-03109429-2A1683692",
+   "event_date": "2026-07-09",
+   "difficulty": "hard",
+   "traps": [
+    "segment table with mixed directions",
+    "GBP and USD segments",
+    "8- and 8.5-month periods",
+    "group EBITDA compared with FY25 actual, not prior guidance"
+   ],
+   "key": {
+    "metric": "EBITDA",
+    "period": "FY26",
+    "previous_low": 2.7,
+    "previous_high": 3.0,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 5.2,
+    "new_high": 5.5,
+    "direction": "UPGRADE",
+    "metric_detail": "Dream US EBITDA (8 months), USD"
+   },
+   "alternates": [
+    {
+     "metric": "EBITDA",
+     "period": "FY26",
+     "previous_low": 8.0,
+     "previous_high": 8.3,
+     "previous_source": "PRIOR_GUIDANCE",
+     "new_low": 7.0,
+     "new_high": 7.3,
+     "direction": "DOWNGRADE",
+     "metric_detail": "Dream UK EBITDA (8.5 months), GBP"
+    },
+    {
+     "metric": "EBITDA",
+     "period": "FY26",
+     "previous_low": null,
+     "previous_high": null,
+     "previous_source": {
+      "any_of": [
+       "NONE",
+       "PCP_ACTUAL"
+      ]
+     },
+     "new_low": 82,
+     "new_high": 85,
+     "direction": "INITIATED",
+     "metric_detail": "Group underlying EBITDA, AUD"
+    },
+    {
+     "metric": "NPAT",
+     "period": "FY26",
+     "previous_low": null,
+     "previous_high": null,
+     "previous_source": {
+      "any_of": [
+       "NONE",
+       "PCP_ACTUAL"
+      ]
+     },
+     "new_low": 39,
+     "new_high": 41,
+     "direction": "INITIATED",
+     "metric_detail": "Group underlying NPAT, AUD"
+    },
+    {
+     "metric": "Other",
+     "period": "FY26",
+     "previous_low": null,
+     "previous_high": null,
+     "previous_source": {
+      "any_of": [
+       "NONE",
+       "PCP_ACTUAL"
+      ]
+     },
+     "new_low": 48,
+     "new_high": 50,
+     "direction": "INITIATED",
+     "metric_detail": "Group underlying NPATA, AUD"
+    }
+   ],
+   "evidence": [
+    {
+     "page": 2,
+     "quote": "is materially"
+    },
+    {
+     "page": 2,
+     "quote": "higher than the previous guidance range of US$2.7m – US$3.0m"
+    },
+    {
+     "page": 1,
+     "quote": "The revised underlying EBITDA range for the 8½ month period of FY26 is expected to be £7.0m –"
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "symbol": "ABB",
+   "doc_key": "2924-03059422-3A687684",
+   "event_date": "2026-02-23",
+   "difficulty": "medium",
+   "traps": [
+    "top of range unchanged; only the bottom raised (midpoint +1.5%, just outside the 1% band)",
+    "half-year results release"
+   ],
+   "key": {
+    "metric": "EBITDA",
+    "period": "FY26",
+    "previous_low": 157,
+    "previous_high": 167,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 162,
+    "new_high": 167,
+    "direction": "UPGRADE"
+   },
+   "alternates": [],
+   "evidence": [
+    {
+     "page": 5,
+     "quote": "between $162 million and $167 million (previously $157 million to $167"
+    },
+    {
+     "page": 1,
+     "quote": "Underlying EBITDA guidance range for FY26 upgraded to $162 million to $167 million,"
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "symbol": "RHT",
+   "doc_key": "2924-03086637-6A1324081",
+   "event_date": "2026-05-05",
+   "difficulty": "medium",
+   "traps": [
+    "EBITDA up while revenue guidance down",
+    "point estimates ('approximately')"
+   ],
+   "key": {
+    "metric": "EBITDA",
+    "period": "FY26",
+    "previous_low": 2.0,
+    "previous_high": 2.0,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 2.6,
+    "new_high": 2.6,
+    "direction": "UPGRADE"
+   },
+   "alternates": [
+    {
+     "metric": "Revenue",
+     "period": "FY26",
+     "previous_low": 17.0,
+     "previous_high": 17.0,
+     "previous_source": "PRIOR_GUIDANCE",
+     "new_low": 16.0,
+     "new_high": 16.0,
+     "direction": "DOWNGRADE"
+    }
+   ],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "The Company now expects FY26 underlying EBITDA to be approximately $2.6 million, equating"
+    },
+    {
+     "page": 1,
+     "quote": "to a 30% increase on previous guidance of $2.0 million"
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "symbol": "MGH",
+   "doc_key": "2924-03117713-2A1687436",
+   "event_date": "2026-08-04",
+   "difficulty": "hard",
+   "traps": [
+    "group range 'increased' but the prior group range is not printed",
+    "continuing-ops range 'in line with' prior 120-140 although its midpoint moves +1.9%"
+   ],
+   "key": {
+    "metric": "EBITDA",
+    "period": "FY26",
+    "previous_low": null,
+    "previous_high": null,
+    "previous_source": {
+     "any_of": [
+      "PRIOR_GUIDANCE",
+      "NONE"
+     ]
+    },
+    "new_low": 300,
+    "new_high": 310,
+    "direction": "UPGRADE"
+   },
+   "alternates": [
+    {
+     "metric": "EBITDA",
+     "period": "FY26",
+     "previous_low": 120,
+     "previous_high": 140,
+     "previous_source": "PRIOR_GUIDANCE",
+     "new_low": 130,
+     "new_high": 135,
+     "direction": {
+      "any_of": [
+       "REAFFIRMED",
+       "UPGRADE"
+      ]
+     },
+     "metric_detail": "Continuing operations EBITDA"
+    }
+   ],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "FY26 underlying EBITDA guidance increased to $300 million - $310 million, including a fair"
+    },
+    {
+     "page": 2,
+     "quote": "in line with the previous guidance for continuing operations of $120m-$140m EBITDA of 24"
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "symbol": "BOL",
+   "doc_key": "2924-03087594-3A692867",
+   "event_date": "2026-05-07",
+   "difficulty": "medium",
+   "traps": [
+    "prior given as points, new as ranges",
+    "statutory, underlying and EPS lines all upgraded",
+    "Q3 trading table"
+   ],
+   "key": {
+    "metric": "NPAT",
+    "period": "FY26",
+    "previous_low": 11.9,
+    "previous_high": 11.9,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 11.9,
+    "new_high": 12.9,
+    "direction": "UPGRADE",
+    "metric_detail": "Underlying NPAT"
+   },
+   "alternates": [
+    {
+     "metric": "NPAT",
+     "period": "FY26",
+     "previous_low": 10.5,
+     "previous_high": 10.5,
+     "previous_source": "PRIOR_GUIDANCE",
+     "new_low": 10.5,
+     "new_high": 11.5,
+     "direction": "UPGRADE",
+     "metric_detail": "Statutory NPAT"
+    },
+    {
+     "metric": "EPS",
+     "period": "FY26",
+     "previous_low": 30,
+     "previous_high": 30,
+     "previous_source": "PRIOR_GUIDANCE",
+     "new_low": 32,
+     "new_high": 32,
+     "direction": "UPGRADE",
+     "metric_detail": "Underlying EPS (cents)"
+    },
+    {
+     "metric": "EPS",
+     "period": "FY26",
+     "previous_low": 26,
+     "previous_high": 26,
+     "previous_source": "PRIOR_GUIDANCE",
+     "new_low": 29,
+     "new_high": 29,
+     "direction": "UPGRADE",
+     "metric_detail": "Statutory EPS (cents)"
+    }
+   ],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "NPAT (Underlying) of $11.9 million – $12.9 million (prior guidance $11.9 million)"
+    },
+    {
+     "page": 1,
+     "quote": "NPAT (Statutory) of $10.5 million – $11.5 million (prior guidance $10.5 million)"
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "symbol": "TWR",
+   "doc_key": "2924-03144524-2A1701855",
+   "event_date": "2026-10-06",
+   "difficulty": "easy",
+   "traps": [
+    "neutral headline ('updates')",
+    "NZD"
+   ],
+   "key": {
+    "metric": "NPAT",
+    "period": "FY26",
+    "previous_low": 55,
+    "previous_high": 65,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 69,
+    "new_high": 79,
+    "direction": "UPGRADE"
+   },
+   "alternates": [],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "between $69m and $79m, compared with its previous guidance range of $55m to $65m."
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "symbol": "NZK",
+   "doc_key": "2924-03079672-2A1666966",
+   "event_date": "2026-04-17",
+   "difficulty": "medium",
+   "traps": [
+    "EBIT prior range straddles zero (-3 to +3)",
+    "range widened as well as raised"
+   ],
+   "key": {
+    "metric": "EBITDA",
+    "period": "FY26",
+    "previous_low": 9,
+    "previous_high": 15,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 19,
+    "new_high": 27,
+    "direction": "UPGRADE"
+   },
+   "alternates": [
+    {
+     "metric": "EBIT",
+     "period": "FY26",
+     "previous_low": -3,
+     "previous_high": 3,
+     "previous_source": "PRIOR_GUIDANCE",
+     "new_low": 10,
+     "new_high": 18,
+     "direction": "UPGRADE"
+    }
+   ],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "Pro‑forma EBITDA is now expected to be in the range of $19 million to $27 million (pro‑forma EBIT $10"
+    },
+    {
+     "page": 1,
+     "quote": "previous guidance range of pro‑forma EBITDA of $9 million"
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "symbol": "FPH",
+   "doc_key": "2924-03123853-2A1690873",
+   "event_date": "2026-08-21",
+   "difficulty": "hard",
+   "traps": [
+    "new H1 guidance (no prior) and updated FY guidance in one release",
+    "billions",
+    "NZD",
+    "FY revenue midpoint moves only +0.4%"
+   ],
+   "key": {
+    "metric": "NPAT",
+    "period": "FY27",
+    "previous_low": 500,
+    "previous_high": 550,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 525,
+    "new_high": 565,
+    "direction": "UPGRADE"
+   },
+   "alternates": [
+    {
+     "metric": "NPAT",
+     "period": "H1FY27",
+     "previous_low": null,
+     "previous_high": null,
+     "previous_source": {
+      "any_of": [
+       "NONE",
+       "PCP_ACTUAL"
+      ]
+     },
+     "new_low": 280,
+     "new_high": 280,
+     "direction": "INITIATED"
+    },
+    {
+     "metric": "Revenue",
+     "period": "FY27",
+     "previous_low": 2450,
+     "previous_high": 2570,
+     "previous_source": "PRIOR_GUIDANCE",
+     "new_low": 2470,
+     "new_high": 2570,
+     "direction": {
+      "any_of": [
+       "REAFFIRMED",
+       "UPGRADE"
+      ]
+     }
+    }
+   ],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "full year net profit after tax to be in the"
+    },
+    {
+     "page": 1,
+     "quote": "range of approximately $525 million to $565 million."
+    },
+    {
+     "page": 1,
+     "quote": "net profit after tax to be in the range of approximately $500 million to $550 million."
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "symbol": "CCP",
+   "doc_key": "2924-03123949-2A1690913",
+   "event_date": "2026-08-21",
+   "difficulty": "medium",
+   "traps": [
+    "acquisition headline",
+    "four metrics in a table",
+    "H1 NPAT guidance in a footnote",
+    "NPAT midpoint +1.75%"
+   ],
+   "key": {
+    "metric": "NPAT",
+    "period": "FY27",
+    "previous_low": 110,
+    "previous_high": 118,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 112,
+    "new_high": 120,
+    "direction": "UPGRADE"
+   },
+   "alternates": [
+    {
+     "metric": "Other",
+     "period": "FY27",
+     "previous_low": 200,
+     "previous_high": 280,
+     "previous_source": "PRIOR_GUIDANCE",
+     "new_low": 300,
+     "new_high": 380,
+     "direction": "UPGRADE",
+     "metric_detail": "PDL acquisitions"
+    },
+    {
+     "metric": "EPS",
+     "period": "FY27",
+     "previous_low": 161,
+     "previous_high": 173,
+     "previous_source": "PRIOR_GUIDANCE",
+     "new_low": 164,
+     "new_high": 176,
+     "direction": "UPGRADE"
+    }
+   ],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "The revised NPAT guidance range of $112-120 million represents 10 per cent growth in earnings relative to"
+    },
+    {
+     "page": 1,
+     "quote": "$110 - 118 million 3"
+    },
+    {
+     "page": 1,
+     "quote": "$112 - 120 million 3"
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "symbol": "ANG",
+   "doc_key": "2924-03018991-6A1295508",
+   "event_date": "2025-11-05",
+   "difficulty": "easy",
+   "traps": [],
+   "key": {
+    "metric": "Revenue",
+    "period": "FY26",
+    "previous_low": 390,
+    "previous_high": 410,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 370,
+    "new_high": 380,
+    "direction": "DOWNGRADE"
+   },
+   "alternates": [
+    {
+     "metric": "EBIT",
+     "period": "FY26",
+     "previous_low": 40,
+     "previous_high": 46,
+     "previous_source": "PRIOR_GUIDANCE",
+     "new_low": 30,
+     "new_high": 34,
+     "direction": "DOWNGRADE"
+    }
+   ],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "FY26 revenue guidance has been revised to a range of $370m - $380m from $390m - $410m"
+    },
+    {
+     "page": 1,
+     "quote": "FY26 underlying EBIT guidance from continuing operations is now a range of $30m - $34m from"
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "symbol": "SKC",
+   "doc_key": "2924-03085266-2A1669341",
+   "event_date": "2026-05-01",
+   "difficulty": "easy",
+   "traps": [
+    "broken PDF text layout",
+    "NZD",
+    "underlying and reported EBITDA both revised"
+   ],
+   "key": {
+    "metric": "EBITDA",
+    "period": "FY26",
+    "previous_low": 190,
+    "previous_high": 210,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 180,
+    "new_high": 190,
+    "direction": "DOWNGRADE"
+   },
+   "alternates": [
+    {
+     "metric": "EBITDA",
+     "period": "FY26",
+     "previous_low": 170.6,
+     "previous_high": 190.6,
+     "previous_source": "PRIOR_GUIDANCE",
+     "new_low": 155,
+     "new_high": 165,
+     "direction": "DOWNGRADE",
+     "metric_detail": "Reported EBITDA"
+    }
+   ],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "for FY26"
+    },
+    {
+     "page": 1,
+     "quote": "to  be  in a range of $180 million to"
+    },
+    {
+     "page": 1,
+     "quote": "underlying EBITDA for FY26 of"
+    },
+    {
+     "page": 1,
+     "quote": "between $190"
+    }
+   ]
+  },
+  {
+   "id": 24,
+   "symbol": "FLT",
+   "doc_key": "2924-03100870-2A1677740",
+   "event_date": "2026-06-17",
+   "difficulty": "medium",
+   "traps": [
+    "FY25 actual $286m sits inside the new range",
+    "new midpoint 'broadly in line with FY25'"
+   ],
+   "key": {
+    "metric": "PBT",
+    "period": "FY26",
+    "previous_low": 310,
+    "previous_high": 345,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 275,
+    "new_high": 295,
+    "direction": "DOWNGRADE",
+    "pcp_actual": 286
+   },
+   "alternates": [],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "Guidance revised to $275m-$295m UPBT – mid-point broadly in line with FY25’s $286m*"
+    },
+    {
+     "page": 1,
+     "quote": "UPBT (below the $310m–$345m* previously targeted)"
+    }
+   ]
+  },
+  {
+   "id": 25,
+   "symbol": "THL",
+   "doc_key": "2924-03094915-2A1674409",
+   "event_date": "2026-05-29",
+   "difficulty": "easy",
+   "traps": [
+    "NZD",
+    "basis change to continuing operations",
+    "net debt guidance alongside"
+   ],
+   "key": {
+    "metric": "NPAT",
+    "period": "FY26",
+    "previous_low": 43,
+    "previous_high": 47,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 40,
+    "new_high": 43,
+    "direction": "DOWNGRADE"
+   },
+   "alternates": [],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "for FY26 to be in the range of $43 million to $47 million; and"
+    },
+    {
+     "page": 1,
+     "quote": "to be in the range of $40 million to $43 million."
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "symbol": "COH",
+   "doc_key": "2924-03081064-2A1667612",
+   "event_date": "2026-04-22",
+   "difficulty": "medium",
+   "traps": [
+    "prior was 'lower end of' $435-460m",
+    "FX assumptions changed"
+   ],
+   "key": {
+    "metric": "NPAT",
+    "period": "FY26",
+    "previous_low": 435,
+    "previous_high": {
+     "any_of": [
+      460,
+      435
+     ]
+    },
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 290,
+    "new_high": 330,
+    "direction": "DOWNGRADE"
+   },
+   "alternates": [],
+   "evidence": [
+    {
+     "page": 3,
+     "quote": "Cochlear is reducing its FY26 underlying net profit guidance to $290-330 million, incorporating current"
+    },
+    {
+     "page": 3,
+     "quote": "underlying net profit guidance range of $435-460"
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "symbol": "FND",
+   "doc_key": "2924-03092400-3A693749",
+   "event_date": "2026-05-21",
+   "difficulty": "medium",
+   "traps": [
+    "FY25 actual $61.6m in the same sentence",
+    "EBITDA 'below the prior band' with no number",
+    "FX-driven range"
+   ],
+   "key": {
+    "metric": "Revenue",
+    "period": "FY26",
+    "previous_low": 100,
+    "previous_high": 105,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 83.0,
+    "new_high": 91.6,
+    "direction": "DOWNGRADE"
+   },
+   "alternates": [
+    {
+     "metric": "EBITDA",
+     "period": "FY26",
+     "previous_low": 10,
+     "previous_high": 12,
+     "previous_source": "PRIOR_GUIDANCE",
+     "new_low": 8,
+     "new_high": 10,
+     "direction": "DOWNGRADE",
+     "metric_detail": "Adjusted operating EBITDA"
+    }
+   ],
+   "evidence": [
+    {
+     "page": 2,
+     "quote": "FY26 Operating Revenue is expected to be A$83.0 – A$91.6m1, below the A$100 – 105m guidance issued in"
+    },
+    {
+     "page": 2,
+     "quote": "FY26 Operating EBITDA is expected to be below the previously guided A$10 – 12m range."
+    }
+   ]
+  },
+  {
+   "id": 28,
+   "symbol": "SBZ",
+   "doc_key": "2924-03137483-2A1698100",
+   "event_date": "2026-09-21",
+   "difficulty": "hard",
+   "traps": [
+    "FY25 pro-forma actual ~$180m beside the prior $190m",
+    "FY27 initial guidance in the same release",
+    "point prior, range new"
+   ],
+   "key": {
+    "metric": "Revenue",
+    "period": "FY26",
+    "previous_low": 190,
+    "previous_high": 190,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": 165,
+    "new_high": 170,
+    "direction": "DOWNGRADE"
+   },
+   "alternates": [
+    {
+     "metric": "Revenue",
+     "period": "FY27",
+     "previous_low": null,
+     "previous_high": null,
+     "previous_source": {
+      "any_of": [
+       "NONE",
+       "PCP_ACTUAL"
+      ]
+     },
+     "new_low": 170,
+     "new_high": 180,
+     "direction": "INITIATED"
+    },
+    {
+     "metric": "EBITDA",
+     "period": "FY27",
+     "previous_low": null,
+     "previous_high": null,
+     "previous_source": {
+      "any_of": [
+       "NONE",
+       "PCP_ACTUAL"
+      ]
+     },
+     "new_low": 18,
+     "new_high": 20,
+     "direction": "INITIATED"
+    }
+   ],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "FY25 revenue of approximately A$180m and previous guidance of A$190m"
+    },
+    {
+     "page": 1,
+     "quote": "SBG FY27 guidance of A$170–180m revenue and A$18–20m Underlying EBITDA"
+    }
+   ]
+  },
+  {
+   "id": 29,
+   "symbol": "ING",
+   "doc_key": "2924-03021900-2A1635581",
+   "event_date": "2025-11-12",
+   "difficulty": "easy",
+   "traps": [
+    "new 1H26 figure (~$80m) alongside the reaffirmed FY range"
+   ],
+   "key": {
+    "metric": "EBITDA",
+    "period": "FY26",
+    "previous_low": {
+     "any_of": [
+      215,
+      null
+     ]
+    },
+    "previous_high": {
+     "any_of": [
+      230,
+      null
+     ]
+    },
+    "previous_source": {
+     "any_of": [
+      "PRIOR_GUIDANCE",
+      "NONE"
+     ]
+    },
+    "new_low": 215,
+    "new_high": 230,
+    "direction": "REAFFIRMED"
+   },
+   "alternates": [
+    {
+     "metric": "EBITDA",
+     "period": "H1FY26",
+     "previous_low": null,
+     "previous_high": null,
+     "previous_source": {
+      "any_of": [
+       "NONE",
+       "PCP_ACTUAL"
+      ]
+     },
+     "new_low": 80,
+     "new_high": 80,
+     "direction": "INITIATED"
+    }
+   ],
+   "evidence": [
+    {
+     "page": 2,
+     "quote": "The Company reaffirms FY26 Underlying EBITDA pre AASB 16 guidance2 of between $215.0 million and $230.0"
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "symbol": "CWY",
+   "doc_key": "2924-03010754-3A679256",
+   "event_date": "2025-10-21",
+   "difficulty": "easy",
+   "traps": [],
+   "key": {
+    "metric": "EBIT",
+    "period": "FY26",
+    "previous_low": {
+     "any_of": [
+      470,
+      null
+     ]
+    },
+    "previous_high": {
+     "any_of": [
+      500,
+      null
+     ]
+    },
+    "previous_source": {
+     "any_of": [
+      "PRIOR_GUIDANCE",
+      "NONE"
+     ]
+    },
+    "new_low": 470,
+    "new_high": 500,
+    "direction": "REAFFIRMED"
+   },
+   "alternates": [],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "today reaffirmed it expects to"
+    },
+    {
+     "page": 1,
+     "quote": "deliver underlying EBIT in FY26 of between $470 million and $500 million."
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "symbol": "AUB",
+   "doc_key": "2924-03030846-2A1639669",
+   "event_date": "2025-12-01",
+   "difficulty": "easy",
+   "traps": [
+    "headline is about takeover talks ending"
+   ],
+   "key": {
+    "metric": "NPAT",
+    "period": "FY26",
+    "previous_low": {
+     "any_of": [
+      215,
+      null
+     ]
+    },
+    "previous_high": {
+     "any_of": [
+      227,
+      null
+     ]
+    },
+    "previous_source": {
+     "any_of": [
+      "PRIOR_GUIDANCE",
+      "NONE"
+     ]
+    },
+    "new_low": 215,
+    "new_high": 227,
+    "direction": "REAFFIRMED"
+   },
+   "alternates": [],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "AUB reaffirms its FY26 guidance for underlying NPAT, to be in the range of AUD215.0 million –"
+    }
+   ]
+  },
+  {
+   "id": 32,
+   "symbol": "AQZ",
+   "doc_key": "2924-03118280-2A1687794",
+   "event_date": "2026-08-05",
+   "difficulty": "medium",
+   "traps": [
+    "'at the mid-point of previous guidance' (new is a point inside the prior range)"
+   ],
+   "key": {
+    "metric": "PBT",
+    "period": "FY26",
+    "previous_low": 35,
+    "previous_high": 40,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": {
+     "any_of": [
+      37.5,
+      35
+     ]
+    },
+    "new_high": {
+     "any_of": [
+      37.5,
+      40
+     ]
+    },
+    "direction": "REAFFIRMED"
+   },
+   "alternates": [],
+   "evidence": [
+    {
+     "page": 2,
+     "quote": "Alliance anticipates FY26 underlying profit before tax (PBT) to be at the mid-point of previous"
+    },
+    {
+     "page": 2,
+     "quote": "guidance of $35 million to $40 million."
+    }
+   ]
+  },
+  {
+   "id": 33,
+   "symbol": "DMP",
+   "doc_key": "2924-03115533-2A1686542",
+   "event_date": "2026-07-29",
+   "difficulty": "easy",
+   "traps": [
+    "statutory loss and $259m write-downs in the same release"
+   ],
+   "key": {
+    "metric": "NPAT",
+    "period": "FY26",
+    "previous_low": {
+     "any_of": [
+      118,
+      null
+     ]
+    },
+    "previous_high": {
+     "any_of": [
+      122,
+      null
+     ]
+    },
+    "previous_source": {
+     "any_of": [
+      "PRIOR_GUIDANCE",
+      "NONE"
+     ]
+    },
+    "new_low": 118,
+    "new_high": 122,
+    "direction": "REAFFIRMED"
+   },
+   "alternates": [],
+   "evidence": [
+    {
+     "page": 3,
+     "quote": "The Company reaffirms its FY26 underlying NPAT guidance previously provided to the market, with"
+    },
+    {
+     "page": 3,
+     "quote": "preliminary unaudited underlying NPAT expected to be in the range of $118m – $122m."
+    }
+   ]
+  },
+  {
+   "id": 34,
+   "symbol": "GNC",
+   "doc_key": "2924-03133959-2A1696443",
+   "event_date": "2026-09-10",
+   "difficulty": "medium",
+   "traps": [
+    "'around the midpoint of' the prior range",
+    "NPAT range reaffirmed too"
+   ],
+   "key": {
+    "metric": "EBITDA",
+    "period": "FY26",
+    "previous_low": 200,
+    "previous_high": 240,
+    "previous_source": "PRIOR_GUIDANCE",
+    "new_low": {
+     "any_of": [
+      220,
+      200
+     ]
+    },
+    "new_high": {
+     "any_of": [
+      220,
+      240
+     ]
+    },
+    "direction": "REAFFIRMED"
+   },
+   "alternates": [
+    {
+     "metric": "NPAT",
+     "period": "FY26",
+     "previous_low": 20,
+     "previous_high": 50,
+     "previous_source": "PRIOR_GUIDANCE",
+     "new_low": 20,
+     "new_high": 50,
+     "direction": "REAFFIRMED"
+    }
+   ],
+   "evidence": [
+    {
+     "page": 2,
+     "quote": "GrainCorp’s FY26 Underlying EBITDA2 is expected to be around the midpoint of the previously announced range of"
+    },
+    {
+     "page": 2,
+     "quote": "$200-240 million and FY26 Underlying NPAT3 in the previously announced range of $20-50 million4"
+    }
+   ]
+  },
+  {
+   "id": 35,
+   "symbol": "TLX",
+   "doc_key": "2924-02969759-3A672045",
+   "event_date": "2025-07-22",
+   "difficulty": "easy",
+   "traps": [
+    "quarterly revenue and YoY growth up front",
+    "calendar-year FY2025"
+   ],
+   "key": {
+    "metric": "Revenue",
+    "period": "FY2025",
+    "previous_low": {
+     "any_of": [
+      770,
+      null
+     ]
+    },
+    "previous_high": {
+     "any_of": [
+      800,
+      null
+     ]
+    },
+    "previous_source": {
+     "any_of": [
+      "PRIOR_GUIDANCE",
+      "NONE"
+     ]
+    },
+    "new_low": 770,
+    "new_high": 800,
+    "direction": "REAFFIRMED"
+   },
+   "alternates": [],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "FY 2025 revenue guidance of $770 million to $800 million is reaffirmed."
+    }
+   ]
+  },
+  {
+   "id": 36,
+   "symbol": "HLO",
+   "doc_key": "2924-03149208-2A1704484",
+   "event_date": "2026-10-16",
+   "difficulty": "medium",
+   "traps": [
+    "FY26 actual $60.2m quoted as comparison",
+    "includes acquisition contribution"
+   ],
+   "key": {
+    "metric": "EBITDA",
+    "period": "FY27",
+    "previous_low": null,
+    "previous_high": null,
+    "previous_source": {
+     "any_of": [
+      "NONE",
+      "PCP_ACTUAL"
+     ]
+    },
+    "new_low": 78,
+    "new_high": 84,
+    "direction": "INITIATED",
+    "pcp_actual": 60.2
+   },
+   "alternates": [],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "Underlying EBITDA for the full financial year of $78m-$84 million (including a contribution of $14"
+    },
+    {
+     "page": 1,
+     "quote": "This compares to an Underlying EBITDA of $60.2 million for the FY26 year."
+    }
+   ]
+  },
+  {
+   "id": 37,
+   "symbol": "ST1",
+   "doc_key": "2924-03000576-3A677501",
+   "event_date": "2025-09-30",
+   "difficulty": "easy",
+   "traps": [
+    "revenue as a floor ('greater than $114 million')"
+   ],
+   "key": {
+    "metric": "EBITDA",
+    "period": "FY26",
+    "previous_low": null,
+    "previous_high": null,
+    "previous_source": {
+     "any_of": [
+      "NONE",
+      "PCP_ACTUAL"
+     ]
+    },
+    "new_low": 12.6,
+    "new_high": 13.6,
+    "direction": "INITIATED"
+   },
+   "alternates": [
+    {
+     "metric": "Revenue",
+     "period": "FY26",
+     "previous_low": null,
+     "previous_high": null,
+     "previous_source": {
+      "any_of": [
+       "NONE",
+       "PCP_ACTUAL"
+      ]
+     },
+     "new_low": 114,
+     "new_high": {
+      "any_of": [
+       114,
+       null
+      ]
+     },
+     "direction": "INITIATED"
+    }
+   ],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "Consequently, Spirit expects FY26 revenue greater than $114 million and uEBITDA between $12.6 million"
+    }
+   ],
+   "note": "Doc is Spirit Technology Solutions (ASX: ST1); the search index lists it under ITS."
+  },
+  {
+   "id": 38,
+   "symbol": "AQZ",
+   "doc_key": "2924-03118879-2A1688317",
+   "event_date": "2026-08-07",
+   "difficulty": "medium",
+   "traps": [
+    "'clarification' headline referring to an earlier release",
+    "preliminary FY27 guidance"
+   ],
+   "key": {
+    "metric": "PBT",
+    "period": "FY27",
+    "previous_low": null,
+    "previous_high": null,
+    "previous_source": "NONE",
+    "new_low": 55,
+    "new_high": 60,
+    "direction": "INITIATED"
+   },
+   "alternates": [],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "Alliance provides preliminary guidance that FY27"
+    },
+    {
+     "page": 1,
+     "quote": "underlying profit before tax (PBT) is expected to be in the range of approximately $55 million to $60"
+    }
+   ]
+  },
+  {
+   "id": 39,
+   "symbol": "IPG",
+   "doc_key": "2924-03092257-2A1673081",
+   "event_date": "2026-05-21",
+   "difficulty": "medium",
+   "traps": [
+    "FY25 reported column in the same table",
+    "statutory vs underlying vs ex-acquisition columns"
+   ],
+   "key": {
+    "metric": "EBITDA",
+    "period": "FY26",
+    "previous_low": null,
+    "previous_high": null,
+    "previous_source": {
+     "any_of": [
+      "NONE",
+      "PCP_ACTUAL"
+     ]
+    },
+    "new_low": {
+     "any_of": [
+      54.5,
+      50.5
+     ]
+    },
+    "new_high": {
+     "any_of": [
+      55.3,
+      51.3
+     ]
+    },
+    "direction": "INITIATED",
+    "pcp_actual": 46.4
+   },
+   "alternates": [
+    {
+     "metric": "EBIT",
+     "period": "FY26",
+     "previous_low": null,
+     "previous_high": null,
+     "previous_source": {
+      "any_of": [
+       "NONE",
+       "PCP_ACTUAL"
+      ]
+     },
+     "new_low": {
+      "any_of": [
+       46.3,
+       42.7
+      ]
+     },
+     "new_high": {
+      "any_of": [
+       47.1,
+       43.5
+      ]
+     },
+     "direction": "INITIATED"
+    }
+   ],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "$54.5–$55.3m"
+    },
+    {
+     "page": 1,
+     "quote": "$46.4m"
+    }
+   ]
+  },
+  {
+   "id": 40,
+   "symbol": "RFG",
+   "doc_key": "2924-03052313-2A1651139",
+   "event_date": "2026-02-03",
+   "difficulty": "medium",
+   "traps": [
+    "1H26 EBITDA estimate (past half) beside FY guidance"
+   ],
+   "key": {
+    "metric": "EBITDA",
+    "period": "FY26",
+    "previous_low": null,
+    "previous_high": null,
+    "previous_source": "NONE",
+    "new_low": 20.0,
+    "new_high": 24.0,
+    "direction": "INITIATED"
+   },
+   "alternates": [],
+   "evidence": [
+    {
+     "page": 1,
+     "quote": "FY26 Underlying EBITDA Guidance of $20.0-24.0m, reflecting upside from initiatives"
+    },
+    {
+     "page": 1,
+     "quote": "1H26 Underlying EBITDA of $9.0-10.0m, based on unaudited management accounts"
+    }
+   ]
+  }
+ ]
+}
