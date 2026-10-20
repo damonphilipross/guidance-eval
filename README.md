@@ -20,7 +20,7 @@ export OPENROUTER_API_KEY=...
 python eval.py run --models z-ai/glm-5.3-flash,anthropic/claude-haiku-5.5 --repeats 2
 ```
 
-`python eval.py score` re-scores `results/raw.jsonl` offline. A full 5-model run cost about US$0.50.
+`python eval.py score --raw results/raw.jsonl` re-scores a run offline. The published run's raw answers are not released; `results/scores_production_prompt.csv` holds the per-attempt outcomes. A full 5-model run cost about US$0.50.
 
 ## How answers are scored
 
@@ -40,3 +40,7 @@ The published scores in `results/` come from a production prompt that isn't rele
 ## Data
 
 The announcements are public ASX company announcements, fetched by document id from the ASX's own file endpoint. The PDFs aren't redistributed here; the golden file holds only document ids, figures and short quotes.
+
+## License
+
+MIT. See `LICENSE`.
